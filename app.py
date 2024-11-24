@@ -188,15 +188,15 @@ if serp_csv is not None:
         fig.layout.updatemenus[0].buttons[0].args[1]["frame"]["duration"] = 500
         fig.layout.updatemenus[0].buttons[0].args[1]["transition"]["duration"] = 500
     fig.update_layout(
-        plot_bgcolor='white',
-        paper_bgcolor='white',
+        plot_bgcolor='#0E1117',
+        paper_bgcolor='#0E1117',
         margin=dict(l=20, r=20, t=20, b=20),
         yaxis_title="Rank (Lower is Better)",
         xaxis_title="Domain",
     )
     fig.update_traces(
-        textfont=dict(color='black'),
-        marker=dict(line=dict(color='black', width=0.5))
+        textfont=dict(color='white'),
+        marker=dict(line=dict(color='white', width=0.5))
     )
 
     st.plotly_chart(fig)
